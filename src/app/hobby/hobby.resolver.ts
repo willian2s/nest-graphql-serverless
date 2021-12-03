@@ -1,13 +1,13 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { Schema as MongooseSchema } from 'mongoose';
 
-import { Hobby } from '@/app/hobby/hobby.model';
-import { HobbyService } from '@/app/hobby/hobby.service';
+import { Hobby } from './hobby.model';
+import { HobbyService } from './hobby.service';
 import {
   CreateHobbyInput,
   ListHobbyInput,
   UpdateHobbyInput,
-} from '@/app/hobby/dto/hobby.dto';
+} from './dto/hobby.dto';
 
 @Resolver(() => Hobby)
 export class HobbyResolver {

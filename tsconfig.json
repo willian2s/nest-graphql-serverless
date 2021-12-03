@@ -1,6 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 14",
   "compilerOptions": {
     "module": "commonjs",
+    "tsBuildInfoFile": ".tsbuildinfo",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -17,8 +20,11 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "lib": ["es2020"],
+    "esModuleInterop": true,
     "paths": {
       "@/*": ["src/*"]
     }
-  }
+  },
+  "exclude": ["test/*"]
 }

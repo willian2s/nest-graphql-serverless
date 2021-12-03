@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Hobby, HobbySchema } from '@/app/hobby/hobby.model';
+import { Hobby, HobbySchema } from './hobby.model';
 import { HobbyService } from './hobby.service';
 import { HobbyResolver } from './hobby.resolver';
 

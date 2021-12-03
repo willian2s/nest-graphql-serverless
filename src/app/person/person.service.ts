@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Schema as MongooseSchema } from 'mongoose';
-import { Person, PersonDocument } from '@/app/person/person.model';
+import { Person, PersonDocument } from './person.model';
 import {
   CreatePersonInput,
   ListPersonInput,
   UpdatePersonInput,
-} from '@/app/person/dto/person.dto';
+} from './dto/person.dto';
 
 @Injectable()
 export class PersonService {

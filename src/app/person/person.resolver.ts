@@ -8,13 +8,13 @@ import {
 } from '@nestjs/graphql';
 import { Schema as MongooseSchema } from 'mongoose';
 
-import { Person, PersonDocument } from '@/app/person/person.model';
-import { PersonService } from '@/app/person/person.service';
+import { Person, PersonDocument } from './person.model';
+import { PersonService } from './person.service';
 import {
   CreatePersonInput,
   ListPersonInput,
   UpdatePersonInput,
-} from '@/app/person/dto/person.dto';
+} from './dto/person.dto';
 import { Hobby } from '../hobby/hobby.model';
 
 @Resolver(() => Person)

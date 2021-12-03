@@ -2,10 +2,10 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { GraphQLModule } from '@nestjs/graphql';
 
-import { AppController } from '@/app/app.controller';
-import { AppService } from '@/app/app.service';
-import { PersonModule } from '@/app/person/person.module';
-import { HobbyModule } from '@/app/hobby/hobby.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { PersonModule } from './person/person.module';
+import { HobbyModule } from './hobby/hobby.module';
 import { join } from 'path';
 
 @Module({
